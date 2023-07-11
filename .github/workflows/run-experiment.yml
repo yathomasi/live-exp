@@ -6,7 +6,7 @@ permissions:
   id-token: write
 jobs:
   deploy-runner:
-    if: github.actor == 'iterative-studio[bot]'
+    if: github.actor == 'iterative-studio-local[bot]'
     environment: cloud
     runs-on: ubuntu-latest
     steps:
