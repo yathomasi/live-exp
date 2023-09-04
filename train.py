@@ -8,7 +8,7 @@ params = dvc.api.params_show()
 
 with Live() as live:
     for i in range(params["epochs"]):
-        live.log_metric("foo", i + random.random())
+        live.log_metric("new", i + random.random())
         live.log_metric("bar", i + random.random())
         live.next_step()
 
